@@ -36,8 +36,6 @@ for dataPC in datasPC_AMD:
             value_video = value_video[0]
             if value_video == "512":
                 value_video = 512 / 1024
-            #print(value,"|", dataPC["Core_Number"],"|", dataPC["Frequency"],"|", value_video,"|", dataVideo["Shina"],"|", dataHDD["volume_hdd"])
-            #datas = value,"|", dataPC["Core_Number"],"|", dataPC["Frequency"],"|", value_video,"|", dataVideo["Shina"],"|", dataHDD["volume_hdd"]
             data = {
                 'value': value,
                 'core_number': dataPC["Core_Number"],
