@@ -8,8 +8,6 @@ data_Mems = graph.data('MATCH (a:Memorys) RETURN a.id, a.name, a.type_ram, a.vol
 data_cases = graph.data('MATCH (a:Cases_pc) RETURN a.id, a.name, a.type_mather, a.power_supply LIMIT 100')
 datas_PS = graph.data('MATCH (a:PS) RETURN a.id, a.name, a.col_power, a.standart LIMIT 100')
 
-
-
 for data_case in data_cases:
     for dataPS in datas_PS:
         if data_case['a.power_supply'] == "Без Блока Питания":
